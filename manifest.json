@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Grafana Auto-Scroller",
+    "version": "1.0",
+    "description": "Automatically scrolls Grafana dashboards up and down.",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://status.thingtrax.com/d/deikv47tmqwaoa/*",
+                "https://status.thingtrax.com/d/deflx3ym037cwa/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
